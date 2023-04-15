@@ -1,4 +1,4 @@
-@smokeWishlist
+@smoke
 Feature: F08_Wishlist
 
   Scenario:  user check that the product successfully added to the wishlist with a success message

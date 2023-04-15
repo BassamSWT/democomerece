@@ -1,4 +1,4 @@
-@smokeSearch
+@smoke
 Feature: F04_Search
   Scenario Outline: user could search using product name
     When user enter search "<search>"

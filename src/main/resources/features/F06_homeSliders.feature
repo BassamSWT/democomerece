@@ -1,4 +1,4 @@
- @smokeSlider
+ @smoke
   Feature: F06_homeSlider
     Scenario: user click on the nokia slider
       When user clicks on nokia home slider
