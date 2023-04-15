@@ -8,18 +8,25 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class P03_homePage {
+    // Currencies StepDef
     public WebElement currencyDropdownLoc(){
         return Hooks.driver.findElement(By.id("customerCurrency"));
     }
     public List<WebElement> priceTextLoc(){
         return Hooks.driver.findElements(By.cssSelector("span[class=\"price actual-price\"]"));
     }
+    //         ------------------------------------------------------------------------------------
+
+    // Search StepDef
     public WebElement searchTextFieldLoc(){
         return Hooks.driver.findElement(By.id("small-searchterms"));
     }
     public WebElement searchButtonLoc(){
         return Hooks.driver.findElement(By.cssSelector("button[class=\"button-1 search-box-button\"]"));
     }
+    //         ------------------------------------------------------------------------------------
+
+    // Hover Categories StepDef
     public List<WebElement> productListLoc(){
         return Hooks.driver.findElements(By.className("product-item"));
     }
@@ -32,19 +39,24 @@ public class P03_homePage {
     public List<WebElement> categoriesListLoc(){
         return Hooks.driver.findElements(By.xpath("//ul[@class=\"top-menu notmobile\"]/li"));
     }
-
     public List<WebElement> subCategoriesListLoc(int selectedCategories){
         return Hooks.driver.findElements(By.xpath("(//ul[@class='top-menu notmobile']//ul)["+(selectedCategories+1)+"]/li"));
     }
     public WebElement subCategoriesTitleLoc(){
         return Hooks.driver.findElement(By.className("page-title"));
     }
+    //         ------------------------------------------------------------------------------------
+
+    // Home Slider StepDef
     public WebElement nokiaSliderLoc(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"nivo-slider\"]/a[2]"));
     }
     public WebElement iphoneSliderLoc(){
         return Hooks.driver.findElement(By.xpath("//*[@id=\"nivo-slider\"]/a[1]"));
     }
+    //         ------------------------------------------------------------------------------------
+
+    // Follow Us StepDef
     public WebElement facebookIconUrlLoc(){
         return Hooks.driver.findElement(By.cssSelector("a[href=\"http://www.facebook.com/nopCommerce\""));
     }
@@ -57,6 +69,9 @@ public class P03_homePage {
     public WebElement youtubeIconUrlLoc(){
         return Hooks.driver.findElement(By.cssSelector("a[href=\"http://www.youtube.com/user/nopCommerce\"]"));
     }
+    //         ------------------------------------------------------------------------------------
+
+    // Wishlist StepDef
     public WebElement wishlistProductIconButtonLoc(){
         return Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div/div[4]/div[2]/div[3]/div/div[2]/div[3]/div[2]/button[3]"));
     }
@@ -72,5 +87,6 @@ public class P03_homePage {
     public WebElement closeButtonLoc(){
         return Hooks.driver.findElement(By.className("close"));
     }
+    //         ------------------------------------------------------------------------------------
 
 }
