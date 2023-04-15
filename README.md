@@ -1,4 +1,5 @@
 # democomerece Project
+![alt democomerce](https://demo.nopcommerce.com/Themes/DefaultClean/Content/images/logo.png)
 
 ## Description
 
