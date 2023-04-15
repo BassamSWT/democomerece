@@ -12,6 +12,7 @@ this project tested some features in democomerce web
 * TestNG
 * Maven
 * POM Design Pattern
+* Cucumber Reports
 
 ## Features Tested
 
