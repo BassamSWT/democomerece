@@ -8,7 +8,7 @@ this project tested some features in democomerce web
 ## Tools
 
 * Java
-* Selenium 
+* Selenium Web Driver
 * Cucumber
 * TestNG
 * Maven
